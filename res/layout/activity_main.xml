@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/title_mainmenu"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/btnTk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="btnSchools_Click"
+        android:tag="5"
+        android:text="@string/menu_tk" />
+
+    <Button
+        android:id="@+id/btnSd"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnSchools_Click"
+        android:tag="1"
+        android:text="@string/menu_sd" />
+
+    <Button
+        android:id="@+id/btnSmp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnSchools_Click"
+        android:tag="2"
+        android:text="@string/menu_smp" />
+
+    <Button
+        android:id="@+id/btnSmk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:tag="4"
+        android:onClick="btnSchools_Click"
+        android:text="@string/menu_smk" />
+
+    <Button
+        android:id="@+id/btnSma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnSchools_Click"
+        android:tag="3"
+        android:text="@string/menu_sma" />
+
+    <Button
+        android:id="@+id/btnAbout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnAbout_Click"
+        android:text="@string/menu_about" />
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnExit_Click"
+        android:text="@string/menu_exit" />
+
+</LinearLayout>
