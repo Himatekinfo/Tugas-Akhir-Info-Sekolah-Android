@@ -184,17 +184,19 @@ containing a value of this type.
         public static final int AkreditasiContainer=0x7f090005;
         public static final int Alamat=0x7f09000d;
         public static final int BiayaLabel=0x7f090007;
+        public static final int Details=0x7f09000f;
+        public static final int DetailsContainer=0x7f09000e;
         public static final int Distance=0x7f090003;
         public static final int DistanceContainer=0x7f090002;
         public static final int InitialCost=0x7f090009;
         public static final int InitialCostContainer=0x7f090008;
-        public static final int Link=0x7f09000e;
+        public static final int Link=0x7f090010;
         public static final int PeriodicalContainer=0x7f09000a;
         public static final int PeriodicalCost=0x7f09000b;
         public static final int SchoolName=0x7f090001;
         public static final int Time=0x7f090004;
         public static final int Title=0x7f090000;
-        public static final int btnDirection=0x7f09000f;
+        public static final int btnDirection=0x7f090011;
     }
     public static final class layout {
         public static final int activity_about=0x7f030000;

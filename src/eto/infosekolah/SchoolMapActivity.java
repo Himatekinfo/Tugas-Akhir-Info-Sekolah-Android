@@ -67,6 +67,12 @@ public class SchoolMapActivity extends FragmentActivity {
 		TextView txtAlamat = (TextView) this.findViewById(R.idMap.Alamat);
 		txtAlamat.setText(SchoolMapActivity.this.s.Address);
 
+		TextView txtDetails = (TextView) this.findViewById(R.idMap.Details);
+		if (SchoolMapActivity.this.s.CostDetails.contains(","))
+			txtDetails.setText(SchoolMapActivity.this.s.CostDetails);
+		else
+			txtDetails.setText("-");
+
 		TextView txtLink = (TextView) this.findViewById(R.idMap.Link);
 		txtLink.setText(SchoolMapActivity.this.s.Website);
 		txtLink.setLinksClickable(true);

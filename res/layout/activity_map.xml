@@ -148,12 +148,31 @@
                     android:layout_height="wrap_content"
                     android:text="{Alamat}" />
             </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+idMap/DetailsContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@idMap/AddressContainer"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Details: " />
+
+                <TextView
+                    android:id="@+idMap/Details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="{Detail}" />
+            </LinearLayout>
 
             <TextView
                 android:id="@+idMap/Link"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@idMap/AddressContainer"
+                android:layout_below="@idMap/DetailsContainer"
                 android:text="{Link}" />
 
             <Button
