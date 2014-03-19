@@ -28,6 +28,7 @@ public class School implements Serializable {
 	public String Longitude = "";
 	public String Address = "";
 	public String CostDetails = "";
+	public String EncodedPolyline = "";
 
 	public String Distance = "0";
 	public String InitialCost = "0";

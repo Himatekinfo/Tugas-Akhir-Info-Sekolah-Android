@@ -20,6 +20,8 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.maps.model.PolylineOptions;
+import com.google.maps.android.PolyUtil;
 
 public class SchoolMapActivity extends FragmentActivity {
 	final Context context = this;
@@ -103,6 +105,9 @@ public class SchoolMapActivity extends FragmentActivity {
 							new LatLng(Double.parseDouble(this.s.Latitude), Double
 									.parseDouble(this.s.Longitude))).title(this.s.Name).draggable(false)
 					.icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_launcher)));
+
+			this.map.addPolyline(new PolylineOptions().addAll(PolyUtil.decode(this.s.EncodedPolyline)).width(
+					5));
 
 			// this.map.setInfoWindowAdapter(new InfoWindowAdapter() {
 			//
